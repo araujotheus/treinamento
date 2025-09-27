@@ -6,56 +6,107 @@
 body{
     line-height: 1.6;
     padding: 20px;
-    background-color: #95cfff;
+    background-color: #010d42;
 }
-h1{
+h1, h3{
     margin-bottom: 10px;
     font-family:"Oswald", sans-serif;
-    color: #ff2424;
+    color: #ff0000;
+    margin-left: 15px;
 }
 h2{
-    margin-bottom: 10px;
-    color: #f24242;
+    margin-bottom: 0px;
     font-family: "Oswald", sans-serif;
+    color: #ff0000;
+    margin-left: 15px;
+    font-size: 30px;
+    margin-top: 10px;
 }
-h3{
-    margin-bottom: 10px;
-    color: #f24242;
+h2 #inicio, h2 #biografia, h2 #legado, h2 #devoção, h2 #milagres, h2 #fotos{
+    margin-bottom: 0px;
     font-family: "Oswald", sans-serif;
+    color: #ff0000;
+    margin-left: 0px;
+    font-size: 40px;
 }
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
-    border-radius: 30px;
-    margin-inline: auto;
+h3 #conectado, h3 #caridade, h3 #ultimos, h3 #resumo{
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+    color: #ff0000;
+    font-size: 15px;
+}
 
+img{
+  width: 100%;   
+  height: 700px; 
+  display: block;
+  object-fit: cover;
 }
+.container {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
+}
+
+.texto {
+  flex: 1; 
+}
+
+.imagem img {
+  max-width: 250px; 
+  height: auto;    
+  border-radius: 8px; 
+  margin-left: 800px;
+  margin-right: 80px;
+}
+.galeria {
+  display: flex;        
+  gap: 15px;            
+  justify-content: center; 
+}
+
+.galeria img {
+  width: 200px;         
+  height: auto;       
+  object-fit: cover;     
+  border-radius: 10px; 
+}
+
 p{
     margin-bottom: 10px;
-    color: #000000;
+    color: #ffee00;
     font-family: "Fira Sans", sans-serif;
+    margin-left: 15px;
 }
-a{
-    color: #3498db;
+header {
+    background: #010d42;
+    padding: 8px 20px;          
+    display: flex;
+    align-items: center;       
+    justify-content: space-between;
+}
+
+header img {
+    width: 300px;   
+    height: auto;
+    margin: 0;
+}
+  
+
+nav a {
+    color: #ffee00;
     text-decoration: none;
+    margin-left: 15px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
 }
-header{
-    background: #1f8fff;
-    padding: 15px;
-    text-align: left;
-    margin-bottom: 10px;
-    border-radius: 20px;    
+nav {
+    margin: 0; 
 }
-#biografia, #legado, #devoção, #milagres, #fotos{
-    background: #79bcff;
-    margin-bottom: 50px;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: left;
-    font-family: "Fira Sans", sans-serif;
+nav a:hover {
+    color: #ff2424;  
 }
-nav{
-    margin-top: 10px;
+body {
+  margin: 0; 
+  padding: 0;
 }
