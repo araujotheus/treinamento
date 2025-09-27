@@ -45,20 +45,26 @@ img{
 .container {
   display: flex;
   align-items: flex-start; 
+  gap: 30px; 
+  margin: 40px 0;
+}
+.texto {
+  flex: 2;
+}
+.galeria {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
   gap: 20px; 
 }
 
-.texto {
-  flex: 1; 
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  object-fit: cover; 
 }
 
-.imagem img {
-  max-width: 250px; 
-  height: auto;    
-  border-radius: 8px; 
-  margin-left: 800px;
-  margin-right: 80px;
-}
 .galeria {
   display: flex;        
   gap: 15px;            
